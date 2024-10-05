@@ -16,8 +16,8 @@ services:
       APP_KEY_PATH: /run/secrets/app_key
     secrets:
       - app_key
-    env_file:
-      - ./.env
+#    env_file:
+#      - ./.env
 
     volumes:
       - ./app:/app

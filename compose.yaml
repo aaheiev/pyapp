@@ -1,0 +1,23 @@
+---
+secrets:
+  app_key:
+    file: .secrets/app.key
+
+services:
+  app:
+    image:        ghcr.io/aaheiev/pyapp:0.0.1-1
+    platform:     linux/amd64
+    stdin_open:   true
+    tty:          true
+    build:
+      dockerfile: Dockerfile
+      context: .
+    environment:
+      APP_KEY_PATH: /run/secrets/app_key
+    secrets:
+      - app_key
+    env_file:
+      - ./.env
+
+    volumes:
+      - ./app:/app

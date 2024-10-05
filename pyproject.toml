@@ -1,0 +1,20 @@
+[tool.poetry]
+package-mode = false
+name = "pyapp"
+version = "0.1.0"
+description = "Simple python app"
+authors = ["Andrii Aheiev <a.ageyev@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12.7"
+pandas = "^2.2.3"
+azure-mgmt-subscription = "^3.1.1"
+azure-mgmt-monitor = "^6.0.2"
+azure-identity = "^1.18.0"
+azure-monitor-query = "^1.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

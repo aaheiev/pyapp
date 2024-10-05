@@ -1,3 +1,8 @@
+# Common files / dirs
+.tmp
+*.key
+.secrets
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
